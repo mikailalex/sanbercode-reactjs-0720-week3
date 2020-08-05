@@ -4,7 +4,8 @@ class Timer extends Component{
   constructor(props){
     super(props)
     this.state = {
-      time: 101
+      time: 101,
+      date: new Date()
     }
   }
 
@@ -33,9 +34,14 @@ class Timer extends Component{
     return(
       <>
       {this.state.time >= 0 &&
+        <>
+        <p style={{textAlign: "left", display: "inline"}}>
+        sekarang jam : {this.state.date.toLocaleTimeString()}
+        </p>
         <p style={{float: "right", display: "inline"}}>
-          {this.state.time}
-        </p>}
+         hitung mundur : {this.state.time}
+        </p>
+        </>}
       </>
     )
   }
