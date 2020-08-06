@@ -1,15 +1,20 @@
 import React from 'react';
-import TabelHargaBuah from './tugas11/dataBuah'
 import './App.css';
-import Timer from './tugas12/Timer';
+import DaftarBuah from './tugas13/DaftarBuah';
+
+// import TabelHargaBuah from './tugas11/dataBuah'
+// import Timer from './tugas12/Timer';
 
 
 function App() {
   return (
-    <div>
-      <TabelHargaBuah />
-      <Timer />
-    </div>
+    // <div>
+    //   <TabelHargaBuah />
+    //   <Timer />
+    // </div>
+    <>
+      <DaftarBuah />
+    </>
   );
 }
 
