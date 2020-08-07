@@ -59,21 +59,15 @@ class DaftarBuah extends Component {
       let newDataBuah = this.state.dataHargaBuah
       let index = this.state.indexOfForm
       let data = {nama: name, harga: price, berat: weight}
-      let data2 = {}
 
       if (index === -1){
         newDataBuah = [...newDataBuah, data]
       }else{
-        // newDataBuah[index].nama = name
-        // newDataBuah[index].harga = price
-        // newDataBuah[index].berat = weight
-        data2.nama = name
-        data2.harga = price
-        data2.berat = weight
+        newDataBuah[index] = data
       }
 
       this.setState({
-        dataHargaBuah: [...newDataBuah, data2],
+        dataHargaBuah: newDataBuah,
         inputName: "",
         inputWeight: "",
         inputPrice: ""
